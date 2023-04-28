@@ -1,0 +1,236 @@
+:root {
+	--black: #212121;
+	--grey: #757575;
+	--light-blue: #2196f3;
+	--white: #ffffff;
+	--hero-banner-container: #2f303a;
+	--footer-container: #2f303a;
+	--team: #f5f4fa;
+	--portfolio-button: #f5f4fa;
+}
+
+body {
+	color: var(--black);
+	background-color: var(--white);
+	font-family: "Roboto", sens-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* główna nawigacja na stronie logo + podstrony + kontakty ===================================== */
+
+.menu-logo {
+	text-decoration: none;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	color: var(--light-blue);
+}
+.menu-logo-title {
+	color: #000000;
+}
+.menu-nav > ul,
+.menu-contacts {
+	list-style-type: none;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.15;
+	letter-spacing: 0.02em;
+}
+.menu-nav-link {
+	text-decoration: none;
+	color: var(--black);
+}
+.menu-nav-link:hover,
+.menu-nav-link:focus {
+	color: var(--light-blue);
+}
+.menu-contact-link {
+	text-decoration: none;
+	color: var(--grey);
+}
+.menu-contact-link:hover,
+.menu-contact-link:focus {
+	color: var(--light-blue);
+}
+
+/* główny tytuł strony hero ================================================== */
+
+.hero {
+	background-color: var(--hero-banner-container);
+}
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.37;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--white);
+}
+.hero-button {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: var(--white);
+	background-color: var(--light-blue);
+	cursor: pointer;
+}
+
+/* nasze atuty================================================================== */
+
+.features > ul {
+	list-style-type: none;
+}
+
+.features-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.15;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.features-text {
+	font-size: 14px;
+	line-height: 1.72;
+	letter-spacing: 0.03em;
+	color: var(--grey);
+}
+/* about us, czym się zajmujemy, same zdjęcia + tytuł ============================= */
+
+.about > ul {
+	list-style-type: none;
+}
+.about-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+/* our team ========================================================================= */
+
+.team {
+	background-color: var(--team);
+}
+.team > ul {
+	list-style-type: none;
+}
+.team-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+.team-list-name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+}
+.team-list-position {
+	font-size: 16px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	color: var(--grey);
+}
+.team-list figure {
+	width: 270px;
+	height: 368px;
+	background: var(--white);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	text-align: center;
+}
+
+/*portfolio ===================================================================== */
+
+.button-nav button {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.63;
+	text-align: center;
+	letter-spacing: 0.03em;
+	background-color: var(--portfolio-button);
+	border-style: hidden;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.button-nav button:hover,
+.button-nav button:focus {
+	color: var(--white);
+	background-color: var(--light-blue);
+}
+/* portfolio images =============================================================== */
+
+.portfolio-img > ul {
+	list-style-type: none;
+}
+.portfolio-img-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+.portfolio-img-text {
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.03em;
+	color: var(--grey);
+}
+.portfolio-img-containers figure {
+	width: 370px;
+	height: 404px;
+	border: 1px solid #eeeeee;
+	background: var(--white);
+	margin: 0px;
+	padding: 0px;
+}
+
+/*footer ========================================================================= */
+
+footer {
+	background-color: var(--footer-container);
+}
+.footer-logo {
+	text-decoration: none;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	color: var(--light-blue);
+}
+.footer-logo-title {
+	color: var(--white);
+}
+.footer-adress-list > ul {
+	list-style-type: none;
+}
+.footer-adress,
+.footer-contacts {
+	text-decoration: none;
+	color: var(--white);
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.72;
+	letter-spacing: 0.03em;
+}
+.footer-contacts {
+	color: rgba(255, 255, 255, 0.6);
+}
+.hidden {
+	opacity: 0;
+}
