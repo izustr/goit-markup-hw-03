@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
 :root {
 	--black: #212121;
 	--grey: #757575;
@@ -13,11 +23,27 @@ body {
 	color: var(--black);
 	background-color: var(--white);
 	font-family: "Roboto", sens-serif;
-	margin: 0px;
-	padding: 0px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 15px;
 }
 
 /* główna nawigacja na stronie logo + podstrony + kontakty ===================================== */
+
+.header-line {
+	border-bottom: #ececec solid 1px;
+}
+.menu-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
 
 .menu-logo {
 	text-decoration: none;
@@ -28,9 +54,23 @@ body {
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	color: var(--light-blue);
+	margin-right: 93px;
 }
 .menu-logo-title {
 	color: #000000;
+}
+.menu-nav {
+	display: flex;
+}
+
+.menu-nav-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 46px;
+}
+.menu-nav-list:last-child {
+	margin-right: 0;
 }
 .menu-nav > ul,
 .menu-contacts {
@@ -39,6 +79,14 @@ body {
 	font-size: 14px;
 	line-height: 1.15;
 	letter-spacing: 0.02em;
+}
+.menu-contacts {
+	line-height: 1.15;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 27px;
+	gap: 50px;
 }
 .menu-nav-link {
 	text-decoration: none;
@@ -79,9 +127,14 @@ body {
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border-color: var(--light-blue);
 	color: var(--white);
 	background-color: var(--light-blue);
 	cursor: pointer;
+	margin: 0 auto;
+	padding: 10px 41px 10px 41px;
 }
 
 /* nasze atuty================================================================== */
@@ -123,6 +176,9 @@ body {
 }
 .team > ul {
 	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 .team-title {
 	font-weight: 700;
@@ -154,7 +210,12 @@ body {
 }
 
 /*portfolio ===================================================================== */
-
+.button-nav {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	padding-top: 94px;
+}
 .button-nav button {
 	font-family: inherit;
 	font-weight: 500;
@@ -166,6 +227,8 @@ body {
 	border-style: hidden;
 	border-radius: 4px;
 	cursor: pointer;
+	margin: 0 auto;
+	padding: 6px 22px;
 }
 .button-nav button:hover,
 .button-nav button:focus {
@@ -176,6 +239,9 @@ body {
 
 .portfolio-img > ul {
 	list-style-type: none;
+}
+.button-item {
+	margin-bottom: 16px;
 }
 .portfolio-img-title {
 	font-weight: 700;
@@ -194,14 +260,23 @@ body {
 	height: 404px;
 	border: 1px solid #eeeeee;
 	background: var(--white);
-	margin: 0px;
-	padding: 0px;
+	margin-bottom: 30px;
 }
-
+.portfolio-img-containers {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 34px 0 94px;
+}
+.figcaption-item {
+	padding: 20px 24px;
+}
 /*footer ========================================================================= */
 
 footer {
 	background-color: var(--footer-container);
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 .footer-logo {
 	text-decoration: none;
@@ -212,15 +287,18 @@ footer {
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	color: var(--light-blue);
+	margin-left: 15px;
 }
 .footer-logo-title {
 	color: var(--white);
 }
 .footer-adress-list > ul {
 	list-style-type: none;
+	padding-top: 20px;
+	margin-left: 15px;
 }
 .footer-adress,
-.footer-contacts {
+.footer-contact {
 	text-decoration: none;
 	color: var(--white);
 	font-style: normal;
@@ -228,9 +306,13 @@ footer {
 	line-height: 1.72;
 	letter-spacing: 0.03em;
 }
-.footer-contacts {
+.footer-item {
+	padding-top: 9px;
+}
+.footer-contact {
 	color: rgba(255, 255, 255, 0.6);
 }
 .hidden {
+	display: none;
 	opacity: 0;
 }
