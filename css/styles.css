@@ -221,12 +221,14 @@ body {
 	font-size: 16px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
+	padding-top: 30px;
 }
 .team-list-position {
 	font-size: 16px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 	color: var(--grey);
+	padding-top: 10px;
 }
 .team-list figure {
 	width: 270px;
