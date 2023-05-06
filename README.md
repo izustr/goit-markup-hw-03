@@ -1,3 +1,3 @@
 # goit-markup-hw-03
 
-tu powinien być link 
+https://izustr.github.io/goit-markup-hw-03/
