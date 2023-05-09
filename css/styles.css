@@ -77,7 +77,6 @@ a {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	/* justify-content: space-between; */
 }
 .menu-nav-item {
 	margin-right: 46px;
@@ -157,7 +156,7 @@ a {
 .features {
 	padding-bottom: 0;
 }
-.features > ul {
+.features-list {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -189,6 +188,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .about-title {
 	font-weight: 700;
@@ -210,10 +210,11 @@ a {
 .team {
 	background-color: var(--team);
 }
-.team-container > ul {
+.team-list {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 .team-title {
 	font-weight: 700;
